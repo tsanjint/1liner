@@ -1,2 +1,0 @@
-Gather subdomains from cidr with mapcidr and dnsx
-while read line; do mapcidr -cidr $line -silent | dnsx -silent -resp-only -ptr | tee -a hosts;done<cidr.txt
